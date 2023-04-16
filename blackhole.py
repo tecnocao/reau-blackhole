@@ -33,11 +33,17 @@ timestamp = int(datetime.utcnow().timestamp())
 
 out_json['last_updated'] = timestamp
 out_json['decimals'] = decimals
-out_json['results'].append({
+entry = {
     'total_burnt': total_burnt,
     'circulating_supply': circulating_supply,
-    'time': timestamp
-})
+    'time': timestamp,
+    'prev_diff': None
+}
+
+if len(out_json['results']) > 0:
+    entry['prev_diff'] = entry['total_burnt'] - out_json['results'][-1]['total_burnt']
+
+out_json['results'].append(entry)
 
 with open('blackhole.json', 'w') as file:
     json.dump(out_json, file, indent=2)
