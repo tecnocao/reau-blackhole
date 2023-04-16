@@ -4,17 +4,20 @@
     {
       "total_burnt": 545621813554707970158629,
       "circulating_supply": 454378186445292029841371,
-      "time": 1681564565
+      "time": 1681564565,
+	  "prev_diff": null
     },
     {
       "total_burnt": 545621813554707970158629,
       "circulating_supply": 454378186445292029841371,
-      "time": 1681565402
+      "time": 1681565402,
+      "prev_diff": 0
     },
     {
       "total_burnt": 545622508695025199457056,
       "circulating_supply": 454377491304974800542944,
-      "time": 1681651802
+      "time": 1681651802,
+      "prev_diff": 695140317229298427
     }
   ],
   "decimals": 9
