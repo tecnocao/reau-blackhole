@@ -1,11 +1,11 @@
 {
-  "last_updated": 1681651802,
+  "last_updated": 1681738203,
   "results": [
     {
       "total_burnt": 545621813554707970158629,
       "circulating_supply": 454378186445292029841371,
       "time": 1681564565,
-	  "prev_diff": null
+      "prev_diff": null
     },
     {
       "total_burnt": 545621813554707970158629,
@@ -18,6 +18,12 @@
       "circulating_supply": 454377491304974800542944,
       "time": 1681651802,
       "prev_diff": 695140317229298427
+    },
+    {
+      "total_burnt": 545623442153196292194428,
+      "circulating_supply": 454376557846803707805572,
+      "time": 1681738203,
+      "prev_diff": 933458171092737372
     }
   ],
   "decimals": 9
