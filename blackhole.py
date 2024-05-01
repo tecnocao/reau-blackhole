@@ -3,7 +3,7 @@ import json
 
 from web3 import Web3
 from reau_abi import REAU_ABI
-from datetime import datetime
+import datetime
 
 RPC_URL = 'https://bsc-dataseed1.binance.org:443'
 REAU_CONTRACT = Web3.to_checksum_address('0x4c79b8c9cb0bd62b047880603a9decf36de28344')
@@ -29,7 +29,7 @@ if os.path.exists('blackhole.json'):
         except:
             print('Failed to open file, creating a new one')
 
-timestamp = int(datetime.utcnow().timestamp())
+timestamp = int(datetime.datetime.now(datetime.UTC).timestamp())
 
 out_json['last_updated'] = timestamp
 out_json['decimals'] = decimals
