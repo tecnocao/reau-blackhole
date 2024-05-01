@@ -22,8 +22,8 @@ out_json = {
     'results': []
 }
 
-if os.path.exists('blackhole.json'):
-    with open('blackhole.json', 'r') as file:
+if os.path.exists('repo/blackhole.json'):
+    with open('repo/blackhole.json', 'r') as file:
         try:
             out_json = json.loads(file.read())
         except:
@@ -45,6 +45,6 @@ if len(out_json['results']) > 0:
 
 out_json['results'].append(entry)
 
-with open('blackhole.json', 'w') as file:
+with open('repo/blackhole.json', 'w') as file:
     json.dump(out_json, file, indent=2)
 
