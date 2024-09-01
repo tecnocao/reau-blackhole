@@ -1,5 +1,5 @@
 {
-  "last_updated": 1725107424,
+  "last_updated": 1725193826,
   "results": [
     {
       "total_burnt": 545621813554707970158629,
@@ -3018,6 +3018,12 @@
       "circulating_supply": 450202262136771108168340,
       "time": 1725107424,
       "prev_diff": 682487792
+    },
+    {
+      "total_burnt": 549797903779340638112840,
+      "circulating_supply": 450202096220659361887160,
+      "time": 1725193826,
+      "prev_diff": 165916111746281180
     }
   ],
   "decimals": 9
